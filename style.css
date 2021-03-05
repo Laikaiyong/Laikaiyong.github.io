@@ -1,0 +1,221 @@
+html{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+	font-size:100%}*,
+		:after,:before{box-sizing:inherit}
+
+header {
+	height: 200px; /*Set height of header background*/
+	width: 100%; /*Set width of header background*/
+	background-color: #04082E
+}
+body {
+	background-color: #282828;
+	background-image: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	animation: Gradient 15s ease infinite;
+	min-height: 100vh;
+	color: #EEBD6B;
+	text-align: center;
+	font-family: 'Roboto Slab';
+	margin: 0%
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+
+.logo {
+	width: 185px
+}
+
+.responsive{
+	width:100%;
+	max-width:400px;
+	height: auto
+}
+
+.container {
+	display: flex;
+	position: relative;
+	max-width: 700px;
+	margin: 0 auto 10px;
+	align-items: center;
+	flex-wrap: wrap
+}
+
+
+.container .card {
+	position: relative;
+	width: auto;
+	background: #04082E;
+	margin: 20px;
+	padding: 30px;
+	display: flex;
+}
+
+
+.container .card .imgbox{
+	max-width:300px;
+	flex: 0 0 300px;
+}
+
+.container .card .imgbox .img{
+	max-width: 400px
+}
+
+.container .card .content{
+	margin-left: 30px;
+	align-content: center
+
+}
+
+@media (max-width: 991px){
+	.container{
+		flex-direction:column;
+	}
+}
+
+@media (max-width:768px){
+	.container{
+		flex-direction: column;
+	}
+	.container .card{
+		flex-direction: column;
+		max-width: 100%;
+	}
+	.container .card .imgbox{
+		max-width: 100%
+	}
+	.container .card .content{
+		margin-left: 0px
+	}
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: 800;
+	letter-spacing: 2px;
+	font-family: 'Roboto Slab';
+}
+
+p {
+	font-size: 20px;
+	color: #FFF;
+	font-weight:500;
+	font-family: "Arvo"
+}
+
+a.pnc {
+	display: block;
+	max-width: 400px;
+	margin: 0 auto 15px;
+	padding: 15px 20px;
+	font-size: .85rem;
+	background-color: #04082E;
+	color: #EEBD6B;
+	text-decoration: none;
+	transition: all .2s ease-in-out;
+	position: relative;
+	font-weight: 600;
+	font-size: 30px;
+	letter-spacing: 1px;
+	font-family: 'Arvo'
+}
+
+a.pnc:hover, a:hover {
+	background-color: #EEBD6B;
+	color: #04082E;
+	text-decoration: underline
+}
+
+a.pnc:before{
+	content:"";
+	position:absolute;
+	top:2px;
+	left:2px;
+	width:calc(100% - 4px);
+	height:calc(100% - 4px);
+	border:2px solid #060042
+}
+
+.icon{
+	width:100%;
+	max-width:50px;
+	padding-right:20px;
+	height:auto
+}
+
+h2{
+	font-size: 40px;
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 2px;
+	font-family: 'Roboto Slab'
+}
+
+.sm {
+	display: flex;
+	max-width: 400px;
+	margin: 0 auto
+}
+
+.sm a{
+	flex:1;
+	padding:5px 10px;
+	margin-right:10px;
+	border:none
+}
+
+.sm a:last-child{margin-right:0}
+
+h3 {
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 2px;
+	font-family: 'Roboto Slab'
+}
+
+.fa-envelope {
+	font-size: 60px;
+	color: #EEBD6B;
+	letter-spacing: 20px
+}
+
+.fa-envelope:hover {
+	background:none;
+	color: #04082E
+}
+
+.fa-youtube-square {
+	font-size: 60px;
+	color: #EEBD6B;
+	letter-spacing: 20px
+}
+
+.fa-youtube-square:hover {
+	background: none;
+	color: #04082E
+}
+
+.fa-twitch {
+	font-size: 60px;
+	color: #EEBD6B;
+	letter-spacing: 20px
+}
+
+.fa-twitch:hover {
+	background: none;
+	color: #04082E
+}
