@@ -36,7 +36,8 @@ body {
 
 
 .logo {
-	width: 185px
+	width: 185px;
+	cursor:not-allowed;
 }
 
 .responsive{
