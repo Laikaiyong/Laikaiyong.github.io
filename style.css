@@ -8,6 +8,8 @@ html{
 header {
 	height: 200px; /*Set height of header background*/
 	width: 100%; /*Set width of header background*/
+	margin: 0;
+	padding: 0;
 	background-color: #04082E
 }
 body {
