@@ -42,6 +42,12 @@ let social_media = [
         Description: "Stack Overflow Lai Kai Yong"
     },
     {
+        Title: "Spotify",
+        Link: "https://open.spotify.com/user/31k3vj2kbplipfsrhb7gje56pd2m",
+        Icon: `<i class="fa-brands fa-spotify"></i>`,
+        Description: "Spotify Vandyck Lai Kai Yong"
+    },
+    {
         Title: "TWB",
         Link: "https://kato.translatorswb.org/6c614646513962672f335a6d635579726c506e5742513d3d3a3ab987681d20198eae05fd370353e1bd0f/key/",
         Icon: `<i class="fas fa-language"></i>`,
@@ -63,15 +69,39 @@ let social_media = [
 
 function addSocialMedia(title, link, icon, description){
     $('.linkarea').append(`
-        <a class="pnc" href="${link}" target="_blank" title="${description}">
-            ${icon}
-            ${title}
+    <div class="container">
+        <a href="${link}" target="_blank" title="${description}">
+            <div class="card">
+                ${icon}
+                ${title}
+            </div>
         </a>
+    </div>
     `);
 }
 
 $(document).ready(function () {
     social_media.forEach((item) => {
         addSocialMedia(item.Title, item.Link, item.Icon, item.Description);
+    });
+});
+
+let mouseCursor = document.querySelector(".cursor");
+let cards = document.querySelectorAll(".linkarea");
+
+window.addEventListener('mousemove', cursor);
+
+function cursor(event)
+{
+    mouseCursor.style.top = event.pageY + 'px';
+    mouseCursor.style.left = event.pageX + 'px';
+}
+
+cards.forEach(card => {
+    card.addEventListener('mouseleave', () => {
+        mouseCursor.classList.remove("link-grow");
+    });
+    card.addEventListener('mouseover', () => {
+        mouseCursor.classList.add("link-grow");
     });
 });

@@ -1,203 +1,98 @@
 html{
 	margin: 0;
 	padding: 0;
-	box-sizing:border-box;
 	scroll-behavior: smooth;
 }
 
-*,
-:after,
-:before{
-	box-sizing:inherit
-}
-
-header {
-	height: 200px; /*Set height of header background*/
-	width: 100%; /*Set width of header background*/
-	margin: 0;
-	padding: 0;
-	background-color: #04082E
-}
-
 body {
-	background-color: #282828;
-	background-image: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-	background-size: 400% 400%;
-	animation: Gradient 15s ease infinite;
-	min-height: 100vh;
-	color: #EEBD6B;
+	background-image: url('https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-02.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	min-height: 100%;
+	color: #C69300;
 	text-align: center;
-	font-family: 'Roboto Slab';
-	margin: 0%
-}
-
-@-webkit-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-
-
-.logo {
-	width: 185px;
-	cursor:not-allowed;
-}
-
-.profile{
-	width:100%;
-	max-width:400px;
-	height: auto
-}
-
-.container {
-	display: flex;
-	position: relative;
-	max-width: 700px;
-	margin: 10px auto;
-	align-items: center;
-	flex-wrap: wrap
-}
-
-
-.container .card {
-	position: relative;
-	width: auto;
-	background: #04082E;
-	margin: 20px;
-	padding: 30px;
-	display: flex;
-}
-
-
-.container .card .imgbox{
-	max-width:300px;
-	flex: 0 0 300px;
-}
-
-.container .card .imgbox .img{
-	max-width: 400px
-}
-
-.container .card .content{
-	margin-left: 30px;
-	align-content: center
-
-}
-
-h1 {
-	font-size: 30px;
-	font-weight: 800;
-	letter-spacing: 2px;
-	font-family: 'Roboto Slab';
-}
-
-p {
-	font-size: 20px;
-	color: #FFF;
-	font-weight:500;
-	font-family: "Arvo"
+	font-family: 'Orbitron', sans-serif;
+	margin: 0;
+    display:flex; 
+    flex-direction:column; 
 }
 
 footer {
-	background-color: #04082E;
-	padding: 20px;
+    background-color: black;
+    color: white;
+    padding: 20px 10px;
+    bottom: 0;
+    margin-top: auto;
+}
+
+.cursor {
+	width: 2rem;
+	height: 2rem;
+	border: 2px solid #18191D;
+	border-radius: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+	transition: all 0.3s ease;
+	transition-property: background, transform;
+}
+
+.link-grow {
+	transform: scale(1.5);
+	background: #C69300;
+	opacity: 0.3;
+}
+
+/* Profile picture */
+#pfp {
+	transform: rotate(-8deg); 
+  	border: 10px solid #18191D;
+	box-shadow: 0px 0px 30px 5px rgba(0,0,0,.3);
+	margin: 20px auto;
+    max-width: 125px;
+}
+
+#title {
+    font-size: 30px;
+	margin: 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 .linkarea {
-	margin-top: 20px;
+    margin: 20px auto;
 }
 
-a.pnc {
-	display: block;
-	max-width: 400px;
-	margin: 0 auto 15px;
-	padding: 15px 20px;
-	font-size: .85rem;
-	background-color: #04082E;
-	color: #EEBD6B;
-	text-decoration: none;
-	transition: all .2s ease-in-out;
-	position: relative;
+.container {
+    margin: 30px 0;
+}
+
+.card {
+    background-color: #18191D;
+	color: #C69300;
+    font-size: 18px;
 	font-weight: 600;
-	font-size: 25px;
-	letter-spacing: 1px;
-	font-family: 'Arvo'
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.card:hover {
+    color: white;
+    width: 250px;
+    background-image: linear-gradient(90deg, #C69300, #18191D 50%, #547AA5);
 }
 
 
-.fa {
-	font-size: 30px;
-	color: #EEBD6B;
-	margin-right: 5px;
-}
-
-a:hover {
-	background-color: #EEBD6B;
-	color: #04082E;
-	text-decoration: underline
-}
-
-a:before{
-	content:"";
-	position:absolute;
-	top:2px;
-	left:2px;
-	width:calc(100% - 4px);
-	height:calc(100% - 4px);
-	border:2px solid #060042
-}
-
-.icon{
-	width:100%;
-	max-width:50px;
-	padding-right:20px;
-	height:auto;
-}
-
-h2{
-	font-size: 40px;
-	text-transform: uppercase;
-	font-weight: 800;
-	letter-spacing: 2px;
-	font-family: 'Roboto Slab'
-}
-
-@media (max-width: 991px){
-	.container{
-		flex-direction:column;
-	}
-	.profile {
-		margin-top: 30px;
-	}
-}
-
-@media (max-width:768px){
-	header {
-		height: 160px;
-	}
-	.logo {
-		width: 150px;
-	}
-	.container{
-		flex-direction: column;
-	}
-	.container .card{
-		flex-direction: column;
-		max-width: 100%;
-	}
-	.container .card .imgbox{
-		max-width: 100%
-	}
-	.container .card .content{
-		margin-left: 0px
-	}
-	h1 {
-		margin: 0;
-	}
+.fab,
+.fas {
+    margin-right: 7px;
 }
