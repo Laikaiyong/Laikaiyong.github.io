@@ -43,7 +43,7 @@ let social_media = [
     },
     {
         Title: "Spotify",
-        Link: "https://open.spotify.com/user/31k3vj2kbplipfsrhb7gje56pd2m",
+        Link: "https://open.spotify.com/user/31k3vj2kbplipfsrhb7gje56pd2m?si=b86abbd3fd8b4a2c",
         Icon: `<i class="fa-brands fa-spotify"></i>`,
         Description: "Spotify Vandyck Lai Kai Yong"
     },
