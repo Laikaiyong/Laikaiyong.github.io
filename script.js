@@ -18,12 +18,6 @@ let social_media = [
         Description: "Facebook Vandyck Lai Kai Yong"
     },
     {
-        Title: "Twitter",
-        Link: "https://twitter.com/KaiVandyck",
-        Icon: `<i class="fab fa-twitter"></i>`,
-        Description: "Twitter @KaiVandyck"
-    },
-    {
         Title: "Discord",
         Link: "https://discord.com/users/753936966038323260/",
         Icon: `<i class="fab fa-discord"></i>`,
@@ -54,18 +48,25 @@ let social_media = [
         Description: "Translator Without Borders Lai Kai Yong"
     },
     {
-        Title: "Mopress.io",
-        Link: "https://tantannews.com/author/36534",
-        Icon: `<i class="fas fa-pen-fancy"></i>`,
-        Description: "Mopress.io @ Tan Tan News 亦梦"
-    },
-    {
         Title: "Mail",
         Link: "mailto:vandycklai@gmail.com",
         Icon: `<i class="fa fa-envelope icon"></i>`,
         Description: "E-mail vandycklai@gmail.com"
     }
 ]
+
+//     {
+//         Title: "Mopress.io",
+//         Link: "https://tantannews.com/author/36534",
+//         Icon: `<i class="fas fa-pen-fancy"></i>`,
+//         Description: "Mopress.io @ Tan Tan News 亦梦"
+//     },
+//     {
+//         Title: "Twitter",
+//         Link: "https://twitter.com/KaiVandyck",
+//         Icon: `<i class="fab fa-twitter"></i>`,
+//         Description: "Twitter @KaiVandyck"
+//     },
 
 function addSocialMedia(title, link, icon, description){
     $('.linkarea').append(`
